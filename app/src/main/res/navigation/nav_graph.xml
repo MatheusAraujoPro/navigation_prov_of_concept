@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.navigationapp.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_financeFragment"
+            app:destination="@id/financeFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+        <action
+            android:id="@+id/action_homeFragment_to_screanFragmentComposeTest"
+            app:destination="@id/screanFragmentComposeTest" />
+        <action
+            android:id="@+id/action_homeFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/financeFragment"
+        android:name="com.example.navigationapp.FinanceFragment"
+        android:label="fragment_finance"
+        tools:layout="@layout/fragment_finance">
+        <argument
+            android:name="user"
+            app:argType="com.example.navigationapp.Pessoa" />
+    </fragment>
+    <fragment
+        android:id="@+id/screanFragmentComposeTest"
+        android:name="com.example.navigationapp.ScreanFragmentComposeTest"
+        android:label="ScreanFragmentComposeTest" >
+        <action
+            android:id="@+id/action_screanFragmentComposeTest_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.navigationapp.ProfileFragment"
+        android:label="ProfileFragment" />
+</navigation>

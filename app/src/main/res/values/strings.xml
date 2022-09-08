@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">NavigationApp</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Primeira Tela</string>
+    <string name="hello_finance_fragment">Consulte as sua Financças aqui</string>
+    <string name="button_text_xml">Navegar para a tela XML</string>
+    <string name="button_text_compose">Navegar para a tela Compose</string>
+    <string name="button_text_fragmentTest">Navegar para a tela Fragment Compose</string>
+</resources>
